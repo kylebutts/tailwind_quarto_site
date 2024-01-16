@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-button-red {
-  @apply px-2 py-1 rounded-md shadow-md bg-red-100;
+/* quarto auto inserts title */
+#title-block-header {
+  display: none;
 }

@@ -1,11 +1,22 @@
 ---
 title: "Tailwind Site"
 ---
+<main class="w-full bg-white">
+<article class="prose lg:prose-lg w-full mx-auto mt-8">
+# This is a Quarto website.
 
-This is a Quarto website.
+You can even use R + htmltools to script creation of html elements using `#| results: asis` chunk option. You should also hide your code with `#| echo: false`. I don't here for illustration purposes only.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+```{r}
+#| echo: true
+#| results: asis
+library(htmltools)
+div(class="not-prose w-[50%] mx-auto bg-white grid grid-cols-3 space-x-4", 
+  lapply(1:3, function(i) {
+    div(class='bg-red-100', p(i))
+  })
+)
+```
 
-<div class="bg-red-100">
-  <h2>Hello!</h2>
-</div>
+</article>
+</main>
