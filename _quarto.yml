@@ -1,0 +1,15 @@
+project:
+  type: website
+  pre-render: compile_tailwindcss.R
+
+website:
+  title: "Tailwind Site"
+
+format:
+  html:
+    theme: none
+    css: 
+      - output.css
+
+
+
